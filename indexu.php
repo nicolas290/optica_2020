@@ -31,7 +31,7 @@
 
                 </p>
 
-                
+                <!--input campo-->
                 <form action="controllers/LoginuController.php" method="POST">
                     <div class="input-field">
                         <input id="rutusu" type="text" name="rut">

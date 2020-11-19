@@ -11,7 +11,7 @@ class conexion
     public static function conector()
     {
         try {
-            return new \PDO(conexion::$url,conexion::$user,conexion::$pass);
+            return new \PDO(conexion::$url,conexion::$user,conexion::$clave);
         } catch (\PDOException $e) {
             return null;
         }
