@@ -1,0 +1,13 @@
+.ancho{
+width: 100%;
+}
+
+/*focus*/
+
+.input-field input:focus + label{
+color: blue !important;
+}
+.input-field input:focus{
+border-bottom: 1px solid blue !important;
+box-shadow: blue;
+}
