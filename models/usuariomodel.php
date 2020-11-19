@@ -4,7 +4,7 @@ namespace models;
 require_once("Conexion.php");
 class UsuarioModel{
 
-    public function InsertarUsuario($data){
+    public function registrarUsuario($data){
         $stm = Conexion::conector()->prepare("INSERT INTO usuario VALUES(:A,:B,NULL,NULL,:C)");
         $stm->bindParam(":A",$data['rut']);
         $stm->bindParam(":B",$data['nombre']);
