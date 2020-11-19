@@ -4,14 +4,14 @@ namespace models;
 
 class conexion
 {
-    public $user = "root";
-    public $clave = "";
-    public $url = "mysql:host;dbname=optica_2020";
+    public $user = "uedpqt3ae1kedki6";
+    public $pass = "epQEzqjm53AHnjWjrMoG";
+    public $url = "mysql:host=bxswfgybkmpdrrqblj9y-mysql.services.clever-cloud.com;dbname=bxswfgybkmpdrrqblj9y";
 
     public static function conector()
     {
         try {
-            return new \PDO(conexion::$url,conexion::$user,conexion::$clave);
+            return new \PDO(conexion::$url,conexion::$user,conexion::$pass);
         } catch (\PDOException $e) {
             return null;
         }
